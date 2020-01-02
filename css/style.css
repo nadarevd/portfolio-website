@@ -406,6 +406,12 @@ footer #container h1 {
     border-left: 2px solid rgb(51, 63, 88) !important;
 }
 
+.winhacks,
+#organization,
+#organization2 {
+    display: none;
+}
+
 .bpuuJK {
     display: block;
     width: 2px;

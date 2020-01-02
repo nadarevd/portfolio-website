@@ -2,6 +2,8 @@
 
 <head>
     <script src="js/header_scroll.js"></script>
+    <script src="js/main.js" defer></script>
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
@@ -80,14 +82,14 @@
             <div class="bNGzA">
                 <ul class="eTZoX">
                     <li>
-                        <button class="jMyOUx"><span>Winhacks</span></button>
-                        <button class="jMyOUx"><span>Organization1</span></button>
-                        <button class="jMyOUx"><span>Organization2</span></button>
-                        <span class="bpuuJK"></span>
+                        <button class="jMyOUx" id="b1" onclick="experience_button()"><span>Winhacks</span></button>
+                        <button class="jMyOUx" id="b2" onclick="experience_button()"><span>Student</span></button>
+                        <button class="jMyOUx" id="b3" onclick="experience_button()"><span>WRSTEF</span></button>
+                        <span class="bpuuJK" id="work-tag"></span>
                     </li>
                 </ul>
 
-                <div class="eULDiZ">
+                <div class="eULDiZ" id="winhacks">
                     <h4 class="RDqw">
                         <span>Co-founder</span>
                         <span class="cZVhwD">
@@ -106,9 +108,9 @@
                     </div>
                 </div>
 
-                <div class="eULDiZ">
+                <div class="eULDiZ" id="organization">
                     <h4 class="RDqw">
-                        <span>Business Administration and Computer Science Student</span>
+                        <span>Business and CS Student</span>
                         <span class="cZVhwD">
                             <span>@</span>
                         <a href="">University of Windsor</a>
@@ -120,7 +122,28 @@
                         <ul>
                             <li>Delved into business finance, accounting, human resources, and strategic management; More interested in strategic management.</li>
                             <li>Familiar with database management using SQL, artificial intelligence, game design, web development, and more.</li>
+                            <li>Performed business research under a supervisor through the Outstanding Scholars Program.</li>
                             <li>Good academic performance; became a member of the Outstanding Scholars program and a lifetime member of the Golden Key International Honours Society.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="eULDiZ" id="organization2">
+                    <h4 class="RDqw">
+                        <span>Volunteer and Judge</span>
+                        <span class="cZVhwD">
+                            <span>@</span>
+                        <a href="">University of Windsor</a>
+                        </span>
+                    </h4>
+                    <h5><span>April 2015 - April 2016</span>
+                    </h5>
+                    <div>
+                        <ul>
+                            <li>Assisted with the maintainance social media of the science fair.</li>
+                            <li>Helped with setting up the area by preparing tables and food.</li>
+                            <li>Guided students and judges around the building and answered any questions they had.</li>
+                            <li>Took the role of judge, evaluating a group of students and carefully determined their score for their projects.</li>
                         </ul>
                     </div>
                 </div>
