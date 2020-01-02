@@ -1,0 +1,478 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+}
+
+body {
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    background-color: #0C1821;
+    color: rgb(136, 146, 176);
+    margin: 0;
+    padding: 0;
+    counter-reset: my_counter;
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#top-header {
+    /* background-color: #1B1725; */
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    background-color: #0C1821;
+    z-index: 11;
+    width: 100%;
+    height: 70px;
+    box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -10px;
+    transform: translateY(0px);
+    filter: none !important;
+    pointer-events: auto !important;
+    user-select: auto !important;
+    padding: 0px 50px;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+.header {
+    transition: top 0.5s;
+}
+
+.header--hidden {
+    -webkit-transform: translateY( -100%);
+    -ms-transform: translateY( -100%);
+    transform: translateY( -100%);
+}
+
+#top-navigation {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    color: rgb(204, 214, 246);
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    counter-reset: item 0;
+    z-index: 12;
+    left: -60px;
+}
+
+#svg-logo {
+    position: relative;
+    float: left;
+    left: 20px;
+}
+
+#dbzyz {
+    display: flex;
+    align-items: center;
+    -webkid-box-align: center;
+}
+
+#dbzyz ol {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+#dbzyz ol li {
+    position: relative;
+    font-size: 13px;
+    margin: 0 10px;
+    box-sizing: inherit;
+    cursor: pointer;
+}
+
+#dbzyz ol li a {
+    display: inline-block;
+    color: inherit;
+    position: relative;
+    text-decoration: none;
+}
+
+.jkYlOe {
+    width: 40px;
+    position: fixed;
+    bottom: 0;
+    left: 40px;
+    color: rgb(168, 178, 209);
+}
+
+.jkYlOe ul {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.jkYlOe ul li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    margin-top: 20px;
+}
+
+#lcojkYlOe {
+    margin-bottom: 20px;
+}
+
+.jkYlOe ul::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 100px;
+    background-color: rgb(168, 178, 209);
+    margin: 0px auto;
+}
+
+.jkYlOe-right {
+    width: 40px;
+    position: fixed;
+    bottom: 0;
+    right: 80px;
+    color: rgb(168, 178, 209);
+}
+
+.jkYlOe-right ul {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.jkYlOe-right ul li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    margin-top: 20px;
+}
+
+#lcojkYlOe {
+    margin-bottom: 20px;
+}
+
+.jkYlOe-right ul::after {
+    content: "";
+    position: relative;
+    display: block;
+    width: 1px;
+    height: 100px;
+    background-color: rgb(168, 178, 209);
+    margin: 0px auto;
+    z-index: -10;
+}
+
+.elNs {
+    margin: 0 auto;
+    display: block;
+    padding: 0 150px;
+}
+
+
+/*```````````` Main Section ``````````*/
+
+.cdntnJ {
+    max-width: 1000px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0px auto;
+    padding: 150px 0;
+}
+
+
+/* Header */
+
+.jvytpZ {
+    color: rgb(100, 255, 218);
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+}
+
+.name-style {
+    font-size: 80px;
+    color: rgb(230, 241, 255) !important;
+}
+
+.bcntl {
+    font-size: 80px;
+    line-height: 1.1;
+    color: rgb(136, 146, 176);
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+}
+
+#small-desc {
+    max-width: 500px;
+}
+
+#small-desc p {
+    color: rgb(136, 146, 176);
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+.kyxs {
+    color: rgb(100, 255, 218);
+    background: transparent;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    font-size: 14px;
+    border: 1px solid rgb(100, 255, 218);
+    cursor: pointer;
+    padding: 20px;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~ About me Information ~~~~~~~~~~~~~~~~~*/
+
+#about-me {
+    max-width: 1000px;
+    position: relative;
+    margin: 0px auto;
+    padding: 150px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-header {
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    display: flex;
+    flex-direction: row;
+    color: rgb(136, 146, 176);
+}
+
+.info-header::before {
+    counter-increment: my_counter;
+    content: "0."counter(my_counter) ". ";
+    color: rgb(100, 255, 218);
+    font-size: 21px;
+    position: relative;
+    top: 2px;
+}
+
+.info-header::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 1px;
+    background-color: rgb(136, 146, 176);
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+#about-me-description {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+
+#about-me-description p {
+    color: rgb(136, 146, 176);
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    text-align: justify;
+    width: 50%;
+}
+
+#about-me-description div {
+    width: 50%;
+}
+
+#about-me-description div img {
+    float: right;
+    box-shadow: 15px 15px rgb(100, 255, 218);
+}
+
+#work {
+    max-width: 1000px;
+    position: relative;
+    margin: 0px auto;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #010C1F;
+    z-index: 1;
+}
+
+footer #container {
+    width: 80%;
+    height: 50px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+footer #container h1 {
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    font-size: 12px;
+    font-weight: 100;
+    text-align: center;
+    color: rgb(136, 146, 176);
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~ Experiences ~~~~~~~~~~~~~~~~~~~*/
+
+#work .info-header {
+    margin: 10px 0px 40px !important;
+}
+
+.bNGzA {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+
+.eTZoX {
+    display: block;
+    position: relative;
+    width: max-content;
+    z-index: 3;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.jMyOUx {
+    text-decoration-skip-ink: auto;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+    height: 42px;
+    text-align: left;
+    white-space: nowrap;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    font-size: 13px;
+    color: rgb(100, 255, 218);
+    text-decoration: none;
+    padding: 0px 20px 2px;
+    border: 0;
+    border-left: 2px solid rgb(51, 63, 88) !important;
+}
+
+.bpuuJK {
+    display: block;
+    width: 2px;
+    height: 42px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transform: translateY(0px);
+    background: rgb(100, 255, 218);
+    border-radius: 3px;
+    transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;
+}
+
+.eULDiZ {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 5px;
+    padding-left: 30px;
+}
+
+.eULDiZ a {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    color: rgb(100, 255, 218);
+    text-decoration: none;
+}
+
+.eULDiZ h5 {
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    font-size: 13px;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    color: rgb(168, 179, 209);
+    margin-bottom: 30px;
+}
+
+.eULDiZ ul {
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.eULDiZ ul li::before {
+    content: "\27A4";
+    position: absolute;
+    left: 0;
+    color: rgb(100, 255, 218);
+}
+
+.eULDiZ ul li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+.RDqw {
+    color: rgb(204, 214, 246);
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+}
+
+.cZVhwD {
+    color: rgb(100, 255, 218);
+}
