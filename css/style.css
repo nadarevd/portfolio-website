@@ -366,8 +366,12 @@ footer #container h1 {
 
 /* ~~~~~~~~~~~~~~~~~~~ Experiences ~~~~~~~~~~~~~~~~~~~*/
 
+#work {
+    margin-bottom: 100px;
+}
+
 #work .info-header {
-    margin: 10px 0px 40px !important;
+    margin: 10px 0px 40px 0px !important;
 }
 
 .bNGzA {
@@ -481,4 +485,19 @@ footer #container h1 {
 
 .cZVhwD {
     color: rgb(100, 255, 218);
+}
+
+.experience-desc-marg {
+    margin-bottom: 50px;
+}
+
+
+/* Projects section */
+
+#projects {
+    margin-bottom: 100px;
+}
+
+#projects .info-header {
+    margin: 10px 0px 40px 0px !important;
 }
