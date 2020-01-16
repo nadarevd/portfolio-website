@@ -3,6 +3,7 @@
 <head>
     <script src="js/header_scroll.js"></script>
     <script src="js/main.js" defer></script>
+    <script src="js/popup.js" defer></script>
     <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <script src="https://kit.fontawesome.com/cd7e9d3ef5.js" crossorigin="anonymous"></script>
@@ -66,7 +67,35 @@
                 <p>I'm a Business Administration and Computer Science student at the University of Windsor. I have a passion for game development, website development, and Artificial Intelligence. </p>
             </div>
             <div style="margin-top: 50px">
-                <a class="kyxs">Let's grab a coffee</a>
+
+                <a id="myButton" class="kyxs">Let's grab a coffee</a>
+
+
+
+                <div id="signup-popup" class="popup">
+                    <div id="signup-popup-content">
+                        <span class="exit">&times;</span>
+                        <h1>Shoot me an e-mail.</h1>
+                        <p>Make sure to leave your information below!</p>
+                        <form id="loginForm" action="php/loginHandler.php" method='post' accept-charset='UTF-8'>
+                            <input type="name" placeholder="name" name="name">
+                            <input type="email" placeholder="email" name="email">
+                            <textarea type="text" placeholder="Your message here..." name="message" height="200px"></textarea>
+
+                        </form>
+
+
+                        <form method="post" action="mailto:nadarevd@uwindsor.ca">
+                            <input type="submit" value="Submit" class="btn-animate" />
+                        </form>
+
+                        </input>
+
+                    </div>
+                </div>
+
+
+
             </div>
         </section>
         <section id="about-me">
