@@ -41,7 +41,7 @@ h4 {
     z-index: 11;
     width: 100%;
     height: 70px;
-    box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -10px;
+    /* box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -10px; */
     transform: translateY(0px);
     filter: none !important;
     pointer-events: auto !important;
@@ -120,8 +120,8 @@ h4 {
 
 .jkYlOe {
     width: 40px;
-    position: fixed;
-    bottom: 0;
+    position: absolute;
+    bottom: -2670px;
     left: 40px;
     color: rgb(168, 178, 209);
 }
@@ -146,6 +146,12 @@ h4 {
     margin-top: 20px;
 }
 
+.jkYlOe ul li:hover {
+    color: white;
+    transform: scale(1.3);
+    transition: all .2s;
+}
+
 #lcojkYlOe {
     margin-bottom: 20px;
 }
@@ -161,8 +167,8 @@ h4 {
 
 .jkYlOe-right {
     width: 40px;
-    position: fixed;
-    bottom: 0;
+    position: absolute;
+    bottom: -2670px;
     right: 80px;
     color: rgb(168, 178, 209);
 }
@@ -185,6 +191,12 @@ h4 {
     display: list-item;
     text-align: -webkit-match-parent;
     margin-top: 20px;
+}
+
+.jkYlOe-right ul li:hover {
+    color: white;
+    transform: scale(1.3);
+    transition: all .2s;
 }
 
 #lcojkYlOe {
@@ -342,7 +354,7 @@ footer {
     margin: 0px auto;
     display: flex;
     flex-direction: column;
-    background-color: #010C1F;
+    background-color: #020C1B;
     z-index: 1;
 }
 
@@ -367,7 +379,12 @@ footer #container h1 {
 /* ~~~~~~~~~~~~~~~~~~~ Experiences ~~~~~~~~~~~~~~~~~~~*/
 
 #work {
-    margin-bottom: 100px;
+    max-width: 1000px;
+    position: relative;
+    margin: 0px auto;
+    padding: 150px 0px;
+    display: flex;
+    flex-direction: column;
 }
 
 #work .info-header {
@@ -495,9 +512,105 @@ footer #container h1 {
 /* Projects section */
 
 #projects {
+    max-width: 1000px;
+    position: relative;
+    margin: 0px auto;
+    padding: 150px 0px;
+    display: flex;
+    flex-direction: column;
     margin-bottom: 100px;
 }
 
 #projects .info-header {
     margin: 10px 0px 40px 0px !important;
+}
+
+.project-boxes {
+    display: grid;
+    position: relative;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+.fQrDb {
+    cursor: default;
+}
+
+.qweasd {
+    box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    background-color: rgb(23, 42, 69);
+    padding: 2rem 1.75rem;
+    position: relative;
+    border-radius: 3px;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+.qweasd header {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.qweasd:hover {
+    margin-top: -2vh;
+    margin-bottom: 2vh;
+    transition: all .5s;
+    -wenkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    -ms-transition: all .5s;
+}
+
+.project-header-info {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    float: right;
+    margin: 0;
+    padding: 10px;
+}
+
+.project-header-info a {
+    color: white;
+    text-decoration: none;
+}
+
+.projects-header-text {
+    color: rgb(204, 214, 246);
+    margin: 0px 0px 10px;
+}
+
+.projects-header-text p {
+    margin: 0px 0px 15px;
+}
+
+
+/* Contact me selectors */
+
+#contact-me {
+    max-width: 1000px;
+    position: relative;
+    margin: 0px auto;
+    padding: 150px 0px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+#contact-me h1,
+#contact-me p {
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    color: rgb(136, 146, 176);
+    text-align: center;
+    margin: 0 auto;
 }

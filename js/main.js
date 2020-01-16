@@ -25,14 +25,10 @@
         document.getElementById("work-tag").style.top = "84px";
     }
 
+    function hover_project(x) {
+        x.style.top = "-10 px";
+    }
 
-
-
-    // if (b1.clicked == true) {
-
-    // }
-    // if (b2.clicked == true) {
-    //     document.getElementById('winhacks').style.display = 'none';
-    //     document.getElementById('organization').style.display = 'block';
-    //     b3.style.display = 'none';
-    // }
+    function hover_project_out(x) {
+        x.style.top = "0 px";
+    }
