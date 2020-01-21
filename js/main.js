@@ -4,8 +4,10 @@
 
 
     b1.onclick = function() {
-        console.log("lol");
         document.getElementById('winhacks').style.display = 'block';
+        document.getElementById('b1').style.textDecoration = 'underline';
+        document.getElementById('b2').style.textDecoration = 'none';
+        document.getElementById('b3').style.textDecoration = 'none';
         document.getElementById('organization').style.display = 'none';
         document.getElementById('organization2').style.display = 'none';
         document.getElementById("work-tag").style.top = "0px";
@@ -13,6 +15,9 @@
 
     b2.onclick = function() {
         document.getElementById('winhacks').style.display = 'none';
+        document.getElementById('b1').style.textDecoration = 'none';
+        document.getElementById('b2').style.textDecoration = 'underline';
+        document.getElementById('b3').style.textDecoration = 'none';
         document.getElementById('organization').style.display = 'block';
         document.getElementById('organization2').style.display = 'none';
         document.getElementById("work-tag").style.top = "42px";
@@ -20,6 +25,9 @@
 
     b3.onclick = function() {
         document.getElementById('winhacks').style.display = 'none';
+        document.getElementById('b1').style.textDecoration = 'none';
+        document.getElementById('b2').style.textDecoration = 'none';
+        document.getElementById('b3').style.textDecoration = 'underline';
         document.getElementById('organization').style.display = 'none';
         document.getElementById('organization2').style.display = 'block';
         document.getElementById("work-tag").style.top = "84px";

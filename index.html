@@ -6,6 +6,7 @@
     <script src="js/popup.js" defer></script>
     <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/style-mobile.css" type="text/css">
     <script src="https://kit.fontawesome.com/cd7e9d3ef5.js" crossorigin="anonymous"></script>
 </head>
 
@@ -13,7 +14,7 @@
     <header id="top-header" class="header">
         <nav id="top-navigation">
             <div id="svg-logo">
-                <img src="images/svg-logo.png" height="50px">
+                <img src="images/svg-logo.png" class="image" height="50px">
             </div>
 
             <div id="dbzyz">
@@ -21,18 +22,32 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about-me">About</a></li>
                     <li><a href="#work">Experience</a></li>
-                    <li>Contact</li>
-                    <li>Resume</li>
+                    <li><a href="#contact-me">Contact</a></li>
+                    <li><a href="files/resume.pdf">Resume</a></li>
                 </ol>
             </div>
         </nav>
     </header>
 
+    <header class="topnav">
+        <a href="#home" class="active"><img src="images/svg-logo.png" height="100%"></a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars fa-3x"></i>
+        </a>
+    </header>
+
     <!-- Fixed information - Social Media and links -->
     <main class="elNs">
 
-        <div class="jkYlOe">
-            <!-- Social media -->
+        <!-- <div class="jkYlOe">
+            Social media
             <ul>
                 <li>
                     <a class="fab fa-linkedin fa-2x"></a>
@@ -46,7 +61,7 @@
             </ul>
         </div>
         <div class="jkYlOe-right">
-            <!-- Social media -->
+            Social media
             <ul>
                 <li>
                     <a class="fab fa-linkedin fa-2x"></a>
@@ -58,18 +73,21 @@
                     <a class="fab fa-github-square fa-2x"></a>
                 </li>
             </ul>
-        </div>
+        </div> -->
+
         <section class="cdntnJ" id="home">
             <h1 class="jvytpZ">Hi, I'm</h1>
             <h1 class="jvytpZ name-style">Denis Nadarevic.</h1>
             <h1 class="bcntl">Pls hire me </h1>
             <div id="small-desc">
-                <p>I'm a Business Administration and Computer Science student at the University of Windsor. I have a passion for game development, website development, and Artificial Intelligence. </p>
+                <p>I'm a Business Administration and Computer Science student at the University of Windsor. I have a passion for game development, website development, and artificial intelligence. </p>
             </div>
             <div style="margin-top: 50px">
 
                 <a id="myButton" class="kyxs">Let's grab a coffee</a>
-
+                <a class="kyxsD" href="mailto:nadarevd@uwindsor.ca" data-rel="external">
+                    Let's Grab a Coffee.
+                </a>
 
 
                 <div id="signup-popup" class="popup">
@@ -104,10 +122,13 @@
                 <p>After graduating from Vincent Massey Secondary School, I've decided to continue my education at the University of Windsor; I delved deep into both Business and Computer Science topics. From strategic management and marketing to frontend
                     web development and database systems management, I got you covered.</p>
                 <div>
-                    <img src="images/denis.jpg" width="200px">
+                    <img src="images/denis.jpg">
                 </div>
             </div>
         </section>
+
+
+
         <section id="work">
             <h1 class="info-header">Experiences</h1>
             <div class="bNGzA">
@@ -115,7 +136,7 @@
                     <li>
                         <button class="jMyOUx" id="b1" onclick="experience_button()"><span>Winhacks</span></button>
                         <button class="jMyOUx" id="b2" onclick="experience_button()"><span>Student</span></button>
-                        <button class="jMyOUx" id="b3" onclick="experience_button()"><span>WRSTEF</span></button>
+                        <button class="jMyOUx border-right-button" id="b3" onclick="experience_button()"><span>WRSTEF</span></button>
                         <span class="bpuuJK" id="work-tag"></span>
                     </li>
                 </ul>
@@ -180,6 +201,10 @@
                 </div>
             </div>
         </section>
+
+
+
+
         <section id="projects">
             <h1 class="info-header">Some of my work</h1>
             <div class="project-boxes">
@@ -188,7 +213,7 @@
                         <header>
 
                             <div class="project-header-info">
-                                <a class="fab fa-github fa-2x" href="https://github.com/bigboydeku/Self-Driving"></a>
+                                <a class="fab fa-github fa-3x" target="_blank" href="https://github.com/bigboydeku/Self-Driving"></a>
                             </div>
 
 
@@ -208,7 +233,7 @@
                         <header>
 
                             <div class="project-header-info">
-                                <a class="fab fa-github fa-2x" href="https://github.com/bigboydeku/The-Wizards-Hat"></a>
+                                <a class="fab fa-github fa-3x" target="_blank" href="https://github.com/bigboydeku/The-Wizards-Hat"></a>
                             </div>
 
 
@@ -228,7 +253,7 @@
                         <header>
 
                             <div class="project-header-info">
-                                <a class="fab fa-github fa-2x" href="https://github.com/bigboydeku/winhacks-bot"></a>
+                                <a class="fab fa-github fa-3x" target="_blank" href="https://github.com/bigboydeku/winhacks-bot"></a>
                             </div>
 
 
@@ -249,7 +274,7 @@
                         <header>
 
                             <div class="project-header-info">
-                                <a class="fab fa-github fa-2x" href="https://github.com/bigboydeku/Pokemon-Server"></a>
+                                <a class="fab fa-github fa-3x" target="_blank" href="https://github.com/bigboydeku/Pokemon-Server"></a>
                             </div>
 
 
@@ -257,7 +282,7 @@
                         <div class="projects-header-text">
                             <h1>Javamon Battles.</h1>
                             <p>
-                                Recreated the core of Pokémon battles utilizing TCP sockets in Java. Battle people from anywhere. </p>
+                                Recreated the core of Pokemon battles utilizing TCP sockets in Java. Battle people from anywhere. </p>
                         </div>
                         <!-- <footer></footer> -->
                     </div>
@@ -268,7 +293,7 @@
                         <header>
 
                             <div class="project-header-info">
-                                <a class="fab fa-github fa-2x" href="https://github.com/bigboydeku/profbook"></a>
+                                <a class="fab fa-github fa-3x" target="_blank" href="https://github.com/bigboydeku/profbook"></a>
                             </div>
 
 
@@ -286,7 +311,7 @@
                         <header>
 
                             <div class="project-header-info">
-                                <a class="fab fa-github fa-2x" href="https://github.com/bigboydeku/portfolio-website"></a>
+                                <a class="fab fa-github fa-3x" target="_blank" href="https://github.com/bigboydeku/portfolio-website"></a>
                             </div>
 
 
@@ -310,7 +335,8 @@
         <section id="contact-me">
             <h1>Wanna talk?</h1>
             <br>
-            <p>Thanks for visiting! I am currently looking for employment. If you are interested in working with me, please do contact me through e-mail, <strong>nadarevd@uwindsor.ca</strong>.</p>
+            <p>Thanks for visiting! I am currently looking for employment. If you are interested in working with me, please do contact me through e-mail, <br> <span><strong>nadarevd@uwindsor.ca</strong></span></p>
+
         </section>
 
 
@@ -319,7 +345,19 @@
     <footer>
         <div id="container">
             <h1>Denis Nadarevic 2020</h1>
-        </div>
+            <div id="footer-social-media">
+                <ul>
+                    <li>
+                        <a class="fab fa-linkedin fa-2x"></a>
+                    </li>
+                    <li>
+                        <a class="fab fa-facebook-square fa-2x"></a>
+                    </li>
+                    <li>
+                        <a class="fab fa-github-square fa-2x"></a>
+                    </li>
+                </ul>
+            </div>
     </footer>
 </body>
 

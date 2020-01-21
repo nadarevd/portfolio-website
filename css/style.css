@@ -50,6 +50,10 @@ h4 {
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
 
+.topnav {
+    display: none;
+}
+
 .header {
     transition: top 0.5s;
 }
@@ -69,7 +73,7 @@ h4 {
     position: relative;
     width: 100%;
     color: rgb(204, 214, 246);
-    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
     counter-reset: item 0;
     z-index: 12;
     left: -60px;
@@ -105,10 +109,16 @@ h4 {
 
 #dbzyz ol li {
     position: relative;
-    font-size: 13px;
+    font-size: 15px;
     margin: 0 10px;
     box-sizing: inherit;
     cursor: pointer;
+    transition: color .4s;
+}
+
+#dbzyz ol li:hover {
+    color: rgb(100, 255, 218);
+    transition: all .4s;
 }
 
 #dbzyz ol li a {
@@ -118,10 +128,17 @@ h4 {
     text-decoration: none;
 }
 
+#topnav {
+    display: none;
+}
+
+
+/*--------------------- */
+
 .jkYlOe {
     width: 40px;
-    position: absolute;
-    bottom: -2670px;
+    position: fixed;
+    bottom: 0;
     left: 40px;
     color: rgb(168, 178, 209);
 }
@@ -167,8 +184,8 @@ h4 {
 
 .jkYlOe-right {
     width: 40px;
-    position: absolute;
-    bottom: -2670px;
+    position: fixed;
+    bottom: 0;
     right: 80px;
     color: rgb(168, 178, 209);
 }
@@ -275,6 +292,13 @@ h4 {
     border: 1px solid rgb(100, 255, 218);
     cursor: pointer;
     padding: 20px;
+    transition: background-color 0.3s linear;
+}
+
+.kyxs:hover {
+    background-color: rgb(100, 255, 218);
+    transition: all .4s;
+    color: black;
 }
 
 
@@ -324,18 +348,26 @@ h4 {
 
 #about-me-description p {
     color: rgb(136, 146, 176);
-    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
     text-align: justify;
     width: 50%;
 }
 
 #about-me-description div {
-    width: 50%;
+    width: 100%;
 }
 
 #about-me-description div img {
+    width: 50%;
     float: right;
     box-shadow: 15px 15px rgb(100, 255, 218);
+    transition: all .4s;
+}
+
+#about-me-description div img:hover {
+    box-shadow: 30px 30px rgb(100, 255, 218);
+    transform: scale(1.05);
+    transition: all .5s;
 }
 
 #work {
@@ -558,14 +590,16 @@ footer #container h1 {
     margin: 0;
 }
 
-.qweasd:hover {
-    margin-top: -2vh;
-    margin-bottom: 2vh;
-    transition: all .5s;
-    -wenkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -o-transition: all .5s;
-    -ms-transition: all .5s;
+@media (hover: hover) {
+    .qweasd:hover {
+        margin-top: -2vh;
+        margin-bottom: 2vh;
+        transition: all .5s;
+        -wenkit-transition: all .5s;
+        -moz-transition: all .5s;
+        -o-transition: all .5s;
+        -ms-transition: all .5s;
+    }
 }
 
 .project-header-info {
@@ -607,16 +641,60 @@ footer #container h1 {
     margin-bottom: 100px;
 }
 
-#contact-me h1,
-#contact-me p {
-    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+#contact-me h1 {
+    font-size: 30px;
     color: rgb(136, 146, 176);
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
     text-align: center;
     margin: 0 auto;
 }
 
+#contact-me p {
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    color: rgb(136, 146, 176);
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#contact-me p span {
+    font-size: 50px;
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    transition: all .5s;
+}
+
+#contact-me p span:hover {
+    color: rgb(100, 255, 218);
+    transition: all .5s;
+}
+
+#footer-social-media {
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+
+#footer-social-media ul {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    position: relative;
+}
+
+#footer-social-media li {
+    padding: 10px 30px 0px 30px;
+}
+
 
 /* pop up*/
+
+.kyxsD {
+    display: none;
+}
 
 .popup {
     display: none;

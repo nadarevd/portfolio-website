@@ -1,0 +1,196 @@
+@media only screen and (min-device-width: 255px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+    #top-header {
+        display: none;
+    }
+    .topnav,
+    .header {
+        display: block;
+        overflow: hidden;
+        background-color: #0C1821;
+        position: relative;
+        height: 150px;
+    }
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .topnav #myLinks {
+        display: none;
+    }
+    /* Style navigation menu links */
+    .topnav a {
+        color: white;
+        padding: 14px 16px;
+        height: 100%;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+    /* Style the hamburger menu */
+    .topnav a.icon {
+        background-color: #0C1821;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 20%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .topnav a.icon i {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    /* Style the active link (or home/logo) */
+    .active {
+        color: white;
+    }
+    .elNs {
+        margin: 0 auto;
+        display: block;
+        padding: 0 50px;
+    }
+    .cdntnJ {
+        max-width: 1400px;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        flex-direction: column;
+        align-items: flex-start;
+        min-height: 0 !important;
+        margin: 0px auto;
+        padding: 150px 0 1000px 0;
+    }
+    .name-style {
+        font-size: 140px;
+    }
+    .bcntl {
+        font-size: 100px;
+    }
+    #small-desc p {
+        width: 130%;
+        font-size: 38px;
+    }
+    .kyxs {
+        display: none;
+    }
+    .kyxsD {
+        display: block;
+        color: rgb(100, 255, 218);
+        background: transparent;
+        font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+        font-size: 10px;
+        border: 3px solid rgb(100, 255, 218);
+        text-decoration: none;
+        cursor: pointer;
+        padding: 20px;
+        width: 350px;
+        font-size: 20px;
+        transition: background-color 0.3s linear;
+        text-align: center;
+    }
+    .info-header,
+    .info-header::before {
+        font-size: 62px;
+    }
+    .info-header::after {
+        top: 40px;
+        left: 20px;
+    }
+    #about-me {
+        padding: 150px 0 1000px 0;
+    }
+    #about-me-description {
+        flex-direction: column;
+    }
+    #about-me-description p {
+        padding: 0px 30px;
+        width: 100%;
+    }
+    #about-me-description div {
+        margin: 100px auto;
+        width: 100%;
+    }
+    #about-me-description div img {
+        width: 500px;
+        float: none;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        /* box-shadow: none !important; */
+    }
+    #about-me-description div img:hover {
+        left: 20%;
+    }
+    /*Work */
+    .bNGzA {
+        flex-direction: column;
+        min-height: 1000px;
+    }
+    .eTZoX {
+        width: 100%;
+        padding-bottom: 50px;
+    }
+    .eTZoX li {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .eTZoX li button span {
+        width: 100%;
+        font-size: 50px;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    }
+    .eTZoX li button {
+        height: 60px;
+    }
+    .bpuuJK {
+        display: none;
+    }
+    .border-right-button {
+        border-right: 2px solid rgb(51, 63, 88) !important;
+    }
+    #projects {
+        padding-bottom: 0 !important;
+    }
+    .project-boxes {
+        grid-template-columns: 100%;
+    }
+    .fQrDb {
+        height: 300px;
+    }
+    .qweasd {
+        height: 100%;
+    }
+    .projects-header-text {
+        font-size: 30px;
+    }
+    .fa-github {
+        transform: scale(1.8);
+        padding: 20px;
+    }
+    #contact-me {
+        padding: 0;
+    }
+    #contact-me p {
+        font-size: 30px;
+    }
+    footer {
+        height: 300px;
+    }
+    footer #container h1 {
+        font-size: 40px;
+    }
+    #footer-social-media ul li {
+        transform: scale(2.0);
+    }
+    #work {
+        padding: 150px 0 1000px 0;
+    }
+}
