@@ -2,6 +2,8 @@
     b2 = document.getElementById('b2');
     b3 = document.getElementById('b3');
 
+    let menu_bar = document.getElementById('myLinks');
+
 
     b1.onclick = function() {
         document.getElementById('winhacks').style.display = 'block';
@@ -39,4 +41,13 @@
 
     function hover_project_out(x) {
         x.style.top = "0 px";
+    }
+
+    function menu() {
+        alert("hi");
+        if (menu_bar.style.display === "block") {
+            menu_bar.style.display = "none";
+        } else {
+            menu_bar.style.display = "block";
+        }
     }

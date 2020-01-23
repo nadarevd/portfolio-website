@@ -16,9 +16,6 @@ window.onload = function() {
             popup.style.display = "none";
 
         }
-        if (event.target == popuptwo) {
-            popuptwo.style.display = "none";
-        }
 
     }
 

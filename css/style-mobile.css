@@ -1,18 +1,30 @@
-@media only screen and (min-device-width: 255px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
     #top-header {
         display: none;
     }
     .topnav,
     .header {
-        display: block;
+        display: flex;
+        flex-direction: row;
         overflow: hidden;
-        background-color: #0C1821;
+        background-color: transparent;
         position: relative;
         height: 150px;
     }
+    .topnav h1 {
+        width: 100%;
+    }
     /* Hide the links inside the navigation menu (except for logo/home) */
-    .topnav #myLinks {
-        display: none;
+    #myLinks {
+        display: block;
+        z-index: -1;
+        color: white;
+        position: relative;
+        float: right;
+        font-size: 40px;
+        font-family: Lato;
+        margin: 25px 25px 0 0;
+        text-transform: uppercase;
     }
     /* Style navigation menu links */
     .topnav a {
@@ -189,6 +201,10 @@
     }
     #footer-social-media ul li {
         transform: scale(2.0);
+    }
+    #footer-social-media ul li a {
+        text-decoration: none;
+        color: rgb(136, 146, 176);
     }
     #work {
         padding: 150px 0 1000px 0;
